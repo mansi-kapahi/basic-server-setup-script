@@ -1,0 +1,9 @@
+#! /bin/bash 
+wget https://releases.hashicorp.com/vault/1.8.0+ent/vault_1.8.0+ent_linux_amd64.zip
+sudo apt-get install unzip 
+unzip vault_1.8.0+ent_linux_amd64.zip
+sudo mv vault /usr/local/bin 
+vault 
+mkdir vault-demo 
+cd vault-demo 
+mkdir -p vault/data
